@@ -570,15 +570,6 @@ def check_and_create():
                                                                    " work within five minutes of the thread's"
                                                                    " creation). This probably means that I can't"
                                                                    " find the right match - sorry!*")
-                '''
-                account_sid = 'AC2799d2a62369c35a8461b5d6e27a19ac'
-                authtoken = 'bd7274f70c7d3d8c92e59d26b3905ea1'
-                twiliocli = TwilioRestClient(account_sid, authtoken)
-                mytwilionumber = '+17693012706'
-                my = '+14044346571'
-                twiliocli.messages.create(body='Match Thread created via PM',
-                                          from_=mytwilionumber, to=my)
-                '''
             if thread_status_ == 1:  # not found
                 msg.reply("Sorry, I couldn't find info for that match. In the future "
                           "I'll account for more matches around the world.")
